@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="registrarce.html">
-   
 </head>
 <body>
     <div id="login-background" class="login-container">
@@ -16,12 +15,11 @@
             <form id="formLogin">
                 <label for="usuario">Usuario:</label>
                 <input type="text" id="usuario" required>
-
                 <label for="clave">Contraseña:</label>
                 <input type="password" id="clave" required>
-
                 <button type="submit">Entrar</button>
             </form>
+            <p>¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p>
         </section>
     </div>
 
@@ -33,8 +31,7 @@
                     <li><button><a href="#menu">Menú</button></a></li>
                     <li><button><a href="#reservar">Reservar</button></a></li>
                     <li><button><a href="#contacto">Contacto</button></a></li>
-                   <a href="encuesta.html" target="_blank"> <button>Encuesta</a></button>
-                  
+                    <a href="encuesta.html" target="_blank"> <button>Encuesta</button></a>
                 </ul>
             </nav>
         </header>
@@ -48,8 +45,10 @@
                     <p>Masa de maíz rellena de queso, frijoles o chicharrón.</p>
                     <p class="precio">Precio: $2.50</p>
                     <input type="number" class="cantidad-pedido" value="1" min="1">
-                    <button class="pedido-btn" data-nombre="Pupusas" data-precio="2.50">Pedido</button>
-                    <a href="pago.html" target="_blank"><button>Pagar</button></a>
+                    <div class="botones-pedido-pago">
+                        <button class="pedido-btn pedido" data-nombre="Pupusas" data-precio="2.50">Pedido</button>
+                        <a href="pago.html" target="_blank"><button class="pagar">Pagar</button></a>
+                    </div>
                 </div>
                 <div class="menu-item">
                     <img src="Sopa de gallina.jpg" alt="Sopa de Gallina">
@@ -57,8 +56,10 @@
                     <p>Caldo caliente con gallina criolla y verduras frescas.</p>
                     <p class="precio">Precio: $5.00</p>
                     <input type="number" class="cantidad-pedido" value="1" min="1">
-                    <button class="pedido-btn" data-nombre="Sopa de Gallina" data-precio="5.00">Pedido</button>
-                    <a href="pago.html" target="_blank"><button>Pagar</button></a>
+                    <div class="botones-pedido-pago">
+                        <button class="pedido-btn pedido" data-nombre="Sopa de Gallina" data-precio="5.00">Pedido</button>
+                        <a href="pago.html" target="_blank"><button class="pagar">Pagar</button></a>
+                    </div>
                 </div>
                 <div class="menu-item">
                     <img src="tamalesavif.avif" alt="Tamales">
@@ -66,8 +67,10 @@
                     <p>Masa echa de maiz con recaudo pollo papas.</p>
                     <p class="precio">Precio: $3.00</p>
                     <input type="number" class="cantidad-pedido" value="1" min="1">
-                    <button class="pedido-btn" data-nombre="Tamales" data-precio="3.00">Pedido</button>
-                    <a href="pago.html" target="_blank"><button>Pagar</button></a>
+                    <div class="botones-pedido-pago">
+                        <button class="pedido-btn pedido" data-nombre="Tamales" data-precio="3.00">Pedido</button>
+                        <a href="pago.html" target="_blank"><button class="pagar">Pagar</button></a>
+                    </div>
                 </div>
             </div>
 
@@ -87,10 +90,10 @@
                     <label for="categoria">Precio Mesas:</label>
                     <select id="categoria">
                         <option selected disabled>Precio máximo (USD):</option>
-                        <option value="mesas">3 Personas 💲35.99</option>
-                        <option value="mesas">4 Personas 💲60.99</option>
-                        <option value="mesas">8 Personas 💲80.99</option>
-                        <option value="mesas">4 Personas 💲150.99</option>
+                        <option value="mesas">3 Personas 35.99</option>
+                        <option value="mesas">4 Personas 60.99</option>
+                        <option value="mesas">8 Personas 80.99</option>
+                        <option value="mesas">4 Personas 150.99</option>
                     </select>
                     <button type="submit">Reservar</button>
                 </form>
@@ -115,7 +118,6 @@
                 <button type="submit">Enviar</button>
             </form>
         </section>
-
 
         <footer>
             <p>© 2025 Restaurante Cihuatan - Todos los derechos reservados.</p>
